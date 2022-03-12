@@ -1,45 +1,55 @@
-# <img src="src/Resources/YunjinSideFace.png" width = "56" height = "56" alt="" align="left" /> 原神账号快速切换工具
+# <img src="src/Resources/YunjinSideFace.png" width = "56" height = "56" alt="" align="left" /> Genshin Impact Account Switching Tool
 
+Chinese server version:
 [![GitHub downloads](https://img.shields.io/github/downloads/emako/genshin-switch/total)](https://github.com/emako/genshin-switch/releases)
 [![GitHub downloads](https://img.shields.io/github/downloads/emako/genshin-switch/latest/total)](https://github.com/emako/genshin-switch/releases)
 
+Global server version:
+[![GitHub downloads](https://img.shields.io/github/downloads/jomata/genshin-switch/total)](https://github.com/jomata/genshin-switch/releases)
+[![GitHub downloads](https://img.shields.io/github/downloads/jomata/genshin-switch/latest/total)](https://github.com/jomata/genshin-switch/releases)
+
 
 GenshinSwitch
-PC版国服原神账号切换工具
+PC version of the Global server Genshin Impact account switching tool
 
-## 截图
+## Screenshot
 
 ![main](screen-shot/main.png)
 
-## 运行环境
+## Runtime Environment
 
--  Windows7及以上
+-  Windows 7 or greater
 - .NET Framework 4.8
 
-## 使用方法
+## How to use
 
-1. 登录游戏账号1点击保存，比如保存为大号
-2. 再登录游戏账号2点击保存，比如保存为小号
-3. 双击保存的大号或小号即可自动登录
+1. Log in to game account #1 and click save. For example, save as "Account A"
+2. Log out, log in to game account #2 and click save. For example, save as "Account B"
+3. Double click on the saved account to log in automatically
 
-## 其他说明
+## Notes
 
-- 需要管理员权限是因为游戏要管理员权限启动
-- 鼠标悬浮可以看到操作提示（如要关闭自行修改配置文件）
-- 选中账号右键可以使用缓启动（自动3分钟后启动，方便循环打大世界Boss材料）
-- 配置文件请更新版本前自行备份
+- Administrator rights are required because the game also needs administrator rights to run.
+- Mouse hover to see the tooltips
+- Right click on the selected account to use delayed start (automatically start after 3 minutes, it's convenient to cycle through the world Boss materials)
+- Please backup the configuration file before updating the version
 
-## 编译生成
+## Compiling
 
-所需工具：`VS2022` `7z` `dotNET_Reactor`
+Required tools: `VS2022` `7z` `dotNET_Reactor`
 
-注意要管理员权限编译，推荐VS里编译后执行下面的参考脚本。
+Note that you need administrator privileges to compile, it is recommended to compile in VS and then execute the following script.
 
-其中dotNET_Reactor用于编译合成为单个exe的版本。
+dotNET_Reactor is used to compile and bundle into a single exe version.
 
-参考：[app_build.bat](app_build.bat)
+Script: [app_build.bat](app_build.bat)
 
-## 更新日志
+## Version history
+
+- **v1.3.g**  `2022-03-12`
+
+> 1. English tranlation
+> 1. Update registry keys and paths for global release
 
 - **v1.3**  `2022-01-23`
 

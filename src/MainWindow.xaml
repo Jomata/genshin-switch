@@ -23,10 +23,10 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Image Grid.Row="0" x:Name="imageMiHoYo" Source="Resources/miHoYo.png" MaxHeight="100" ToolTip="三连击启动提瓦特大地图"/>
+            <Image Grid.Row="0" x:Name="imageMiHoYo" Source="Resources/miHoYo.png" MaxHeight="100" ToolTip="Triple click to open Tivat's map"/>
             <materialDesign:Card Grid.Row="1" Padding="10" Margin="10,15,10,5">
                 <StackPanel>
-                    <TextBlock Text="原神安装目录：" FontSize="16" Foreground="#673AB7"/>
+                    <TextBlock Text="Genshin installation directory:" FontSize="16" Foreground="#673AB7"/>
                     <FrameworkElement Height="5"/>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -34,9 +34,9 @@
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" CornerRadius="2" BorderBrush="#673AB7" BorderThickness="1.5" Margin="0,5,0,5">
-                            <TextBox x:Name="textBoxInstallPath" Text="" MaxLines="1" FontSize="16" Foreground="#673AB7" ToolTip="示例：C:\Program Files\Genshin Impact"/>
+                            <TextBox x:Name="textBoxInstallPath" Text="" MaxLines="1" FontSize="16" Foreground="#673AB7" ToolTip="Example: C:\Program Files\Genshin Impact"/>
                         </Border>
-                        <Button x:Name="buttonInstallPath" Grid.Column="1" Content="..." Margin="5,0,0,0" HorizontalAlignment="Left" ToolTip="手动选择原神安装目录"/>
+                        <Button x:Name="buttonInstallPath" Grid.Column="1" Content="..." Margin="5,0,0,0" HorizontalAlignment="Left" ToolTip="Manually select the Genshin installation directory"/>
                     </Grid>
                 </StackPanel>
             </materialDesign:Card>
@@ -52,23 +52,23 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0" Orientation="Horizontal">
-                        <Button x:Name="buttonAdd" Content="保存" Margin="0,0,5,10" ToolTip="保存当前登录中账号"/>
-                        <Button x:Name="buttonRemove" Content="移除" Margin="5,0,5,10" ToolTip="移除选中账号" />
+                        <Button x:Name="buttonAdd" Content="Save" Margin="0,0,5,10" ToolTip="Save the currently logged in account"/>
+                        <Button x:Name="buttonRemove" Content="Delete" Margin="5,0,5,10" ToolTip="Remove selected account" />
                     </StackPanel>
-                    <Button Grid.Column="1" x:Name="buttonYaml" Content="配置文件" Margin="0,0,0,10" ToolTip="请在关闭本程序后修改配置文件然后在重启程序"/>
+                    <Button Grid.Column="1" x:Name="buttonYaml" Content="Configuration" Margin="0,0,0,10" ToolTip="Please modify the configuration file after closing the program and then restart the program"/>
                 </Grid>
                 <Border Grid.Row="1" CornerRadius="2" BorderBrush="#673AB7" BorderThickness="1.5">
-                    <ListBox x:Name="listBoxAccount" Foreground="#673AB7" ToolTip="双击重启原神登录" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                    <ListBox x:Name="listBoxAccount" Foreground="#673AB7" ToolTip="Double-click to restart Genshin login" ScrollViewer.VerticalScrollBarVisibility="Visible">
                         <ListBox.ContextMenu>
                             <ContextMenu StaysOpen="true">
-                                <MenuItem x:Name="menuItemSlowStart" Header="缓启动（3分钟后启动）"/>
+                                <MenuItem x:Name="menuItemSlowStart" Header="Delayed start (start after 3 minutes)"/>
                             </ContextMenu>
                         </ListBox.ContextMenu>
                     </ListBox>
                 </Border>
             </Grid>
             </materialDesign:Card>
-            <TextBlock Grid.Row="3" x:Name="textBlockVersion" HorizontalAlignment="Right" Foreground="Gray" Text="v1.3" Margin="10,5,10,10" ToolTip="双击访问程序主页"/>
+            <TextBlock Grid.Row="3" x:Name="textBlockVersion" HorizontalAlignment="Right" Foreground="Gray" Text="v1.3.g" Margin="10,5,10,10" ToolTip="Double click to access the program home page"/>
         </Grid>
     </Grid>
 </Window>

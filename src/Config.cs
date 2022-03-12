@@ -36,7 +36,7 @@ namespace GenshinSwitch
     public class Account
     {
         [YamlIgnore]
-        public const string ProdKey = "MIHOYOSDK_ADL_PROD_CN_h3123967166";
+        public const string ProdKey = "MIHOYOSDK_ADL_PROD_OVERSEA_h1158948810";
 
         [YamlIgnore]
         public const string DataKey = "GENERAL_DATA_h2389025596";
@@ -72,13 +72,13 @@ namespace GenshinSwitch
 
         private static string GetStringFromRegedit(string key)
         {
-            object value = Registry.GetValue(@"HKEY_CURRENT_USER\Software\miHoYo\原神", key, "");
+            object value = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\miHoYo\Genshin Impact", key, "");
             return Encoding.UTF8.GetString((byte[])value);
         }
 
         private static void SetStringToRegedit(string key, string value)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\miHoYo\原神", key, Encoding.UTF8.GetBytes(value));
+            Registry.SetValue(@"HKEY_CURRENT_USER\SOFTWARE\miHoYo\Genshin Impact", key, Encoding.UTF8.GetBytes(value));
         }
     }
 }

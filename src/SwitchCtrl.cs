@@ -19,7 +19,7 @@ namespace GenshinSwitch
 
             try
             {
-                Process[] processes = Process.GetProcessesByName("YuanShen");
+                Process[] processes = Process.GetProcessesByName("GenshinImpact");
 
                 if (processes.Length > 0)
                 {
@@ -27,9 +27,9 @@ namespace GenshinSwitch
                     {
                         process.CloseMainWindow();
                     }
-                    if (!SpinWait.SpinUntil(() => Process.GetProcessesByName("YuanShen").Length <= 0, 15000))
+                    if (!SpinWait.SpinUntil(() => Process.GetProcessesByName("GenshinImpact").Length <= 0, 15000))
                     {
-                        MessageBox.Show("你家原神就离谱没杀死，请手动关闭后重试！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        MessageBox.Show("Could not stop Genshin Impact, please close it manually and try again！", "Tooltip", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                         return;
                     }
                 }
@@ -43,7 +43,7 @@ namespace GenshinSwitch
 
             if (string.IsNullOrEmpty(Config.Instance.InstallPath))
             {
-                MessageBox.Show("请选择原神安装路径后，才能使用自动重启功能", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please set the Genshin installation path before you use the automatic restart", "Tooltip", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -68,7 +68,7 @@ namespace GenshinSwitch
                 }
                 else
                 {
-                    path = Path.Combine(path, "Genshin Impact Game", "YuanShen.exe");
+                    path = Path.Combine(path, "Genshin Impact Game", "GenshinImpact.exe");
                 }
 
                 var startInfo = new ProcessStartInfo()
@@ -91,7 +91,7 @@ namespace GenshinSwitch
             try
             {
                 using var hklm = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
-                using var key = hklm.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\原神");
+                using var key = hklm.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Genshin Impact");
                 
                 if (key == null)
                 {

@@ -43,7 +43,7 @@ namespace GenshinSwitch
             {
                 if(e.ClickCount == 3)
                 {
-                    Process.Start("https://webstatic.mihoyo.com/app/ys-map-cn");
+                    Process.Start("https://webstatic-sea.mihoyo.com/app/ys-map-sea");
                 }
             };
 
@@ -51,7 +51,7 @@ namespace GenshinSwitch
             {
                 if (e.ClickCount == 2)
                 {
-                    Process.Start("https://github.com/emako/genshin-switch");
+                    Process.Start("https://github.com/jomata/genshin-switch");
                 }
             };
 
@@ -116,7 +116,7 @@ namespace GenshinSwitch
             {
                 if (listBoxAccount.SelectedIndex >= 0)
                 {
-                    if (MessageBoxF.Show($"确定要删除{(listBoxAccount.SelectedItem as ListBoxItem)?.Content}？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResultF.Yes)
+                    if (MessageBoxF.Show($"Are you sure you want to delete {(listBoxAccount.SelectedItem as ListBoxItem)?.Content}？", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResultF.Yes)
                     {
                         return;
                     }
