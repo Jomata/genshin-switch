@@ -148,6 +148,15 @@ namespace GenshinSwitch
                     Task.Run(() => SwitchCtrl.Switch(index, 180000));
                 }
             };
+
+            menuItemNoStart.Click += (s, e) =>
+            {
+                if (listBoxAccount.SelectedItem != null)
+                {
+                    int index = listBoxAccount.Items.IndexOf(listBoxAccount.SelectedItem);
+                    Task.Run(() => SwitchCtrl.Switch(index, int.MaxValue ));
+                }
+            };
         }
 
         public void ForceClose()

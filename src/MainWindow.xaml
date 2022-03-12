@@ -62,13 +62,14 @@
                         <ListBox.ContextMenu>
                             <ContextMenu StaysOpen="true">
                                 <MenuItem x:Name="menuItemSlowStart" Header="Delayed start (start after 3 minutes)"/>
+                                <MenuItem x:Name="menuItemNoStart" Header="No start (only loads configuration)"/>
                             </ContextMenu>
                         </ListBox.ContextMenu>
                     </ListBox>
                 </Border>
             </Grid>
             </materialDesign:Card>
-            <TextBlock Grid.Row="3" x:Name="textBlockVersion" HorizontalAlignment="Right" Foreground="Gray" Text="v1.3.g" Margin="10,5,10,10" ToolTip="Double click to access the program home page"/>
+            <TextBlock Grid.Row="3" x:Name="textBlockVersion" HorizontalAlignment="Right" Foreground="Gray" Text="v1.4.g" Margin="10,5,10,10" ToolTip="Double click to go to the program home page"/>
         </Grid>
     </Grid>
 </Window>

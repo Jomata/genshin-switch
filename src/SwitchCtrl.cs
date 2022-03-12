@@ -41,6 +41,12 @@ namespace GenshinSwitch
 
             Config.Instance.Accounts[index].WriteReg();
 
+            if(delayMs == int.MaxValue)
+            {
+                MessageBox.Show("Login info successfully updated","Success");
+                return;
+            } 
+
             if (string.IsNullOrEmpty(Config.Instance.InstallPath))
             {
                 MessageBox.Show("Please set the Genshin installation path before you use the automatic restart", "Tooltip", MessageBoxButtons.OK, MessageBoxIcon.Information);

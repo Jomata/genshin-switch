@@ -31,7 +31,9 @@ PC version of the Global server Genshin Impact account switching tool
 
 - Administrator rights are required because the game also needs administrator rights to run.
 - Mouse hover to see the tooltips
-- Right click on the selected account to use delayed start (automatically start after 3 minutes, it's convenient to cycle through the world Boss materials)
+- Right click on the selected account for additional options: 
+    - Delayed start (automatically start after 3 minutes, it's convenient to cycle through the world Boss materials)
+    - No start (doesn't start Genshin Impact, useful if you use Steam or another launcher)
 - Please backup the configuration file before updating the version
 
 ## Compiling
