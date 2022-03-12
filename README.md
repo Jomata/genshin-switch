@@ -38,7 +38,7 @@ PC version of the Global server Genshin Impact account switching tool
 
 ## Compiling
 
-Required tools: `VS2022` `7z` `dotNET_Reactor`
+Required tools: `VS2022` `7z`
 
 Note that you need administrator privileges to compile, it is recommended to compile in VS and then execute the following script.
 
