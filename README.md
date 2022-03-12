@@ -42,7 +42,7 @@ Required tools: `VS2022` `7z` `dotNET_Reactor`
 
 Note that you need administrator privileges to compile, it is recommended to compile in VS and then execute the following script.
 
-dotNET_Reactor is used to compile and bundle into a single exe version.
+`Costura.Fody` is used to bundle into a single executable file.
 
 Script: [app_build.bat](app_build.bat)
 
@@ -52,6 +52,7 @@ Script: [app_build.bat](app_build.bat)
 
 > 1. English tranlation
 > 1. Update registry keys and paths for global release
+> 1. Swap from `dotNET_Reactor` to `Costura.Fody` to bundle into a single exe
 
 - **v1.3**  `2022-01-23`
 
