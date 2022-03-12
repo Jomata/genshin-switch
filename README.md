@@ -48,11 +48,14 @@ Script: [app_build.bat](app_build.bat)
 
 ## Version history
 
+- **v1.4.g**  `2022-03-12`
+> 1. Add "No automatic start" option
+> 1. Swap from `dotNET_Reactor` to `Costura.Fody` to bundle into a single exe
+
 - **v1.3.g**  `2022-03-12`
 
 > 1. English tranlation
 > 1. Update registry keys and paths for global release
-> 1. Swap from `dotNET_Reactor` to `Costura.Fody` to bundle into a single exe
 
 - **v1.3**  `2022-01-23`
 
